@@ -306,7 +306,7 @@ div{
         opacity: 0.4;
     }
     p{
-        opacity: 0.4;
+        padding-top: 10px;
     }
     .box1 {
         max-width: 300px;
@@ -320,6 +320,20 @@ div{
         background-color: red;
 
     }
+    }
+    input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        width: 290px;
+        height: 30px;
+       border: 1px solid darkgrey;
+       color: darkgray; 
+    }
+    button{
+        border: 1px solid black;
+        width: 100px;
+        height: 30px;
     }
 
    hr{
