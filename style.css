@@ -1,20 +1,20 @@
+
 *{
     margin:0;
     padding: 0;
     box-sizing:border-box;
 }
 body{
-    background-color: black;
+    background-color:#141414;
 }
 .header{
     position: fixed;
     width: 100%;
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex: wrap;
-
+    background-color: #141414;
 .logo  h1{
     color: darkgray ; 
     font-size: 30px;
@@ -51,10 +51,19 @@ span{
     visibility: hidden;
     position: absolute;
     margin:10px;
+    h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     button{
+        margin-bottom: 10px;
+        margin-left: -20px;
         background-color: black;
         color: white;
         border-color: darkgray;
+        width: 100px;
+        height: 30px;
+
     }
 }
 .over1:hover .overcontent{
@@ -70,7 +79,7 @@ span{
     color: darkgray;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+    background-color: #141414;
     .content{
         /* font-size: 40px; */
         /* padding: 200px 220px; */
@@ -120,7 +129,7 @@ span{
 .featureproducts{
     display: block;
     color: darkgray;
-
+    background-color: #141414;
     h1{
         text-align: center;
     }
@@ -178,6 +187,7 @@ span{
 /* Top Products */
 
 .topProducts{
+    background-color: #141414;
     color:darkgray;
     h1{
     text-align: center;
@@ -205,19 +215,24 @@ span{
         grid-template-columns: repeat(4,1fr);
         gap: 30px;
         margin-left: 30px;
+        margin-right: 20px;
 
     }
 
     .card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12
     {
+        background-color: #161819;
         border: 1px solid gray; 
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        margin-top: 10Px;
         
     }
     
     img{
+        margin-top: 20px;
         width: 200px;
         margin-left: 70px;
+        margin-bottom: 10px;
     }
     img:hover{
         transform:scale(1.1)
@@ -225,17 +240,24 @@ span{
     h2{
         font-size: 20px;
     }
-    div{
+    /* div{
         margin-left: 20px;
         margin-bottom: 10px;
         margin-right: 10px;
         background-color: black;
+    } */
+    .cardcontent{
+        margin-left:2px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        background-color: #141414;
+        padding: 12px;
     }
     p{
       opacity:0.4 ;  
     }
     .underline{
-        font-size: 10px;
+        font-size: 13px;
         text-decoration: line-through;
         opacity: 0.4;
     }
@@ -251,13 +273,16 @@ span{
         opacity: 0.4;
     }
 
-    .card12{
-        font-size: 20px;
+    .card12 {
+        font-size: 15px;
         text-align: center;
         padding: 110px;
     }
     .card12 i{
         font-size: 17px;
+    }
+    .card12hover.hover{
+        transform: scale(1.3);
     }
 
 }
@@ -268,7 +293,6 @@ span{
 .advantages{
     margin: 100px;
     color: darkgray;
-
 h1{
     text-align: center;
 }
@@ -289,12 +313,16 @@ div{
     flex:wrap;
     margin: 40px;
 }
+i{
+    font-size: 30px;
+}
 }
 
 /* Footer */
 
-.footer{
+.footer{    
     color:darkgray;
+    background-color: black;
     .footerbox{
     display:flex;
     justify-content: space-between;
@@ -308,9 +336,15 @@ div{
     p{
         padding-top: 10px;
     }
+    .box2,.box3{
+        margin-top: 20px;
+    }
+
+    }
     .box1 {
         max-width: 300px;
-        margin-top: -50px;
+
+        margin-top: 10px;
     }
     .box1 input{
         background-color: black;
@@ -319,7 +353,6 @@ div{
         color: white;
         background-color: red;
 
-    }
     }
     input{
         margin-top: 10px;
@@ -331,7 +364,6 @@ div{
        color: darkgray; 
     }
     button{
-        border: 1px solid black;
         width: 100px;
         height: 30px;
     }
@@ -344,7 +376,6 @@ div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
    }
    .icons i{
         padding: 15px;
@@ -352,6 +383,7 @@ div{
         color: white;
    }
 }
+
 
 
 
@@ -512,6 +544,7 @@ div{
 
     .card1,.card2,.card3,.card4
     {
+        background-color: #161819;
         border: 1px solid gray; 
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
         
@@ -520,6 +553,9 @@ div{
     img{
         width: 200px;
         margin-left: 70px;
+    }
+    img:hover{
+        transform:scale(1.1)
     }
     h2{
         font-size: 20px;
@@ -549,6 +585,13 @@ div{
     hr{
         opacity: 0.4;
     }
+    .cardcontent
+    {margin-left:2px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        background-color: #141414;
+        padding: 12px;
+    }
 }
 
 
@@ -561,7 +604,7 @@ div{
     color: darkgrey;
     
 .carts{
-    background-color: #2b2727;
+    background-color: #161819;
     color: darkgray; 
     width: 650px;
     height: 500px;
@@ -581,6 +624,21 @@ div{
         display: flex;
         flex-direction: row;
     }
+     button{
+        /* padding:5px; */
+        border: 1px solid gray;
+        background-color:#222222;
+        color: white;
+        width:30px;
+     }
+     .btn{
+        color: red;
+        background-color: #161819;
+     }
+     div{
+        margin-left: 35px;
+     }
+    
     .cardcontent{
         display: flex;
         flex-direction: column;
@@ -604,6 +662,8 @@ div{
     }
 }
 .Ordersummary{
+    margin-left: 200px;
+    width: 320px;
     .summary{
         /* position: relative;
         top: 140px;
@@ -624,6 +684,7 @@ div{
     }
 
 }
+
 }
 
 
